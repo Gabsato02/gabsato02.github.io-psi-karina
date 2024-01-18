@@ -1,0 +1,53 @@
+:root {
+  /* COLORS */
+  --light-blue: #DDF2FD;
+  --grey-blue: #9BBEC8;
+  --medium-blue: #427D9D;
+  --dark-blue: #164863;
+  --black: #161927;
+  --white: #fff;
+  --grey: #9096a4;
+  --light-grey: #e7e9ef;
+  --dark-grey: #626772;
+  --shadow: rgba(0, 0, 0, .2);
+  /* SPACING */
+  --xs-gutter: 8px;
+  --sm-gutter: 16px;
+  --md-gutter: 24px;
+  --lg-gutter: 32px;
+  --xl-gutter: 64px;
+  /* TEXT */
+  --xs-text: 8px;
+  --sm-text: 12px;
+  --md-text: 16px;
+  --lg-text: 24px;
+  --xl-text: 32px;
+  /* CONTAINER */
+  --sm-container: 768px;
+  --md-container: 1024px;
+  --lg-container: 1288px;
+  /* SHADOWS */
+  --box-shadow-sm: 0 0 2px 0 var(--shadow);
+  --box-shadow: 0px 1px 4px 1px var(--shadow);
+  --box-shadow-lg: 0 4px 8px var(--shadow);
+  --text-shadow: 1px 1px 2px var(--black);
+  /* DEFAULTS */
+  --default-gutter: var(--sm-gutter);
+  --container: var(--sm-container);
+  --section-paragraph: var(--sm-text);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --default-gutter: var(--md-gutter);
+    --container: var(--md-container);
+    --section-paragraph: var(--md-text);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --default-gutter: var(--lg-gutter);
+    --container: var(--lg-container)
+  }
+}
