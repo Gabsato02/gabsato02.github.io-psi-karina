@@ -1,6 +1,8 @@
 body {
   color: var(--black);
   background: var(--grey-blue);
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .header {
