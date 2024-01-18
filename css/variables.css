@@ -34,14 +34,13 @@
   /* DEFAULTS */
   --default-gutter: var(--sm-gutter);
   --container: var(--sm-container);
-  --section-paragraph: var(--sm-text);
+  --section-paragraph: var(--md-text);
 }
 
 @media (min-width: 768px) {
   :root {
     --default-gutter: var(--md-gutter);
     --container: var(--md-container);
-    --section-paragraph: var(--md-text);
   }
 }
 
