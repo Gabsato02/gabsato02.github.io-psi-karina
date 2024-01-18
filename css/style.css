@@ -11,12 +11,16 @@ body {
   padding: var(--default-gutter);
   border-bottom: 1px solid var(--grey-blue);
   box-shadow: var(--box-shadow);
+  font-family: 'NeutralFace';
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  column-gap: var(--sm-gutter);
 }
 
 .header .title {
@@ -26,6 +30,7 @@ body {
 
 .header .crp {
   font-size: var(--sm-text);
+  color: var(--dark-grey);
 }
 
 .main {
@@ -59,16 +64,20 @@ body {
   padding-bottom: 4px;
   border-bottom: 1px solid var(--light-grey);
   margin-bottom: var(--xs-gutter);
+  font-family: 'QuickSandBold';
+  font-weight: 700;
 }
 
 .section-paragraph {
+  line-height: 1.6;
   font-size: var(--section-paragraph);
+  font-family: 'QuickSand';
 }
 
 .banner {
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(40, 50, 65, 0.1) 0%, var(--light-blue) 100%), url('banner.jpg') no-repeat center;
+  background: url('../assets/banner.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
@@ -81,26 +90,36 @@ body {
 }
 
 .banner-overline {
+  z-index: 2;
   position: absolute;
   left: var(--sm-gutter);
   top: var(--md-gutter);
   color: var(--white);
-  font-size: var(--lg-text);
+  font-size: var(--md-text);
   text-shadow: var(--text-shadow);
-  text-transform: uppercase;
+  font-family: 'BadScriptRegular';
 }
 
 .banner-cta {
+  z-index: 2;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   bottom: var(--xl-gutter);
-  background: var(--dark-blue);
   padding: var(--sm-gutter);
-  font-size: var(--md-text);
+  font-size: var(--lg-text);
+  font-family: 'QuickSandBold';
+  font-weight: 1000;
+  text-align: center;
   text-decoration: none;
+  text-shadow: var(--text-shadow);
   color: var(--white);
+  background: var(--medium-blue);
   box-shadow: var(--box-shadow-lg);
+}
+
+.banner-cta:active {
+  background-color: var(--dark-blue);
 }
 
 .therapy {
@@ -119,6 +138,10 @@ body {
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   padding: var(--default-gutter);
   width: calc(100% - var(--default-gutter) * 2);
   margin: -16px auto var(--default-gutter);
@@ -130,19 +153,27 @@ body {
 .contact-title {
   font-size: var(--lg-text);
   margin-bottom: var(--xs-gutter);
+  font-family: 'QuickSandBold';
 }
 
 .contact-subtitle {
   display: block;
-  margin-bottom: var(--sm-gutter);
+  margin-bottom: var(--lg-gutter);
+  font-family: 'QuickSand';
 }
 
 .contact-item {
   display: flex;
-  column-gap: var(--sm-gutter);
+  column-gap: var(--xs-gutter);
   text-decoration: none;
   color: var(--white);
   margin-bottom: var(--xs-gutter);
+  transition: 0.4s;
+  font-family: 'QuickSand';
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
 }
 
 .contact-item:last-of-type {
@@ -176,15 +207,24 @@ body {
   .banner-overline {
     left: var(--md-gutter);
     top: var(--lg-gutter);
+    font-size: var(--lg-text);
   }
 
   .banner-cta {
     padding: var(--md-gutter);
-    font-size: var(--lg-text);
+    font-size: var(--xl-text);
+  }
+
+  .therapy {
+    max-width: 70vw;
   }
 
   .service {
     padding-top: calc(var(--default-gutter) / 2);
+  }
+
+  .contact {
+    max-width: 50vw;
   }
 
   .contact-title {
@@ -193,11 +233,10 @@ body {
   }
 
   .contact-subtitle {
-    margin-bottom: var(--lg-gutter);
+    margin-bottom: var(--xl-gutter);
   }
 
   .contact-item {
-    column-gap: var(--md-gutter);
     margin-bottom: var(--sm-gutter);
   }
 
@@ -223,6 +262,48 @@ body {
   .banner-overline {
     left: var(--lg-gutter);
     top: var(--xl-gutter);
-    font-size: var(--xl-text);
+  }
+
+  .banner-cta {
+    box-shadow: 0 0 0 .05em inset var(--white); 
+    --gradient: linear-gradient(var(--medium-blue) 0 0) no-repeat;
+    background: 
+      var(--gradient) calc(var(--progress,0%) - 100%) 0%,
+      var(--gradient) calc(200% - var(--progress,0%)) 0%,
+      var(--gradient) calc(var(--progress,0%) - 100%) 100%,
+      var(--gradient) calc(200% - var(--progress,0%)) 100%;
+    background-size: 50.5% calc(var(--progress,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+
+  .banner-cta:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: var(--box-shadow-lg);
+  }
+
+  .banner-cta:hover {
+    --progress: 100%;
+    box-shadow: 0 0 0 .1em inset var(--medium-blue); 
+    transition: background-position .4s, background-size 0s;
+  }
+
+  .banner-cta:active {
+    box-shadow: 0 0 9e9q inset var(--black); 
+    background-color: var(--dark-blue);
+    color: var(--white);
+  }
+
+  .therapy {
+    max-width: 50vw;
+  }
+
+  .contact {
+    max-width: 40vw;
   }
 }
