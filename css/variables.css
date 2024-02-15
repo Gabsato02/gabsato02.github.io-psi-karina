@@ -32,6 +32,8 @@
   --box-shadow-lg: 0 4px 8px var(--shadow);
   --text-shadow: 1px 1px 2px var(--black);
   /* DEFAULTS */
+  --border-radius: 4px;
+  /* DEFAULTS */
   --default-gutter: var(--sm-gutter);
   --container: var(--sm-container);
   --section-paragraph: var(--md-text);
