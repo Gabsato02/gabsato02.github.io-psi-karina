@@ -1,19 +1,23 @@
 @font-face {
   font-family: NeutralFace;
-  src: url("../fonts/NeutralFace.otf");
+  src: url("../fonts/NeutralFace.otf"), local('Calibri');
+  font-display: swap;
 }
 
 @font-face {
   font-family: QuickSand;
-  src: url("../fonts/Quicksand_Book.otf");
+  src: url("../fonts/Quicksand_Book.otf"), local('Calibri');
+  font-display: swap;
 }
 
 @font-face {
   font-family: QuickSandBold;
-  src: url("../fonts/Quicksand_Book.otf");
+  src: url("../fonts/Quicksand_Book.otf"), local('Calibri');
+  font-display: swap;
 }
 
 @font-face {
   font-family: BadScriptRegular;
-  src: url("../fonts/BadScript-Regular.ttf");
+  src: url("../fonts/BadScript-Regular.ttf"), local('Calibri');
+  font-display: swap;
 }
