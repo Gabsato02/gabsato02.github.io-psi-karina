@@ -1,6 +1,6 @@
 body {
   color: var(--black);
-  background: var(--grey-blue);
+  height: fit-content;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -61,7 +61,10 @@ body {
 }
 
 .section-title {
-  font-size: var(--md-text);
+  display: flex;
+  align-items: center;
+  column-gap: var(--xs-gutter);
+  font-size: var(--lg-text);
   color: var(--dark-blue);
   padding-bottom: 4px;
   border-bottom: 1px solid var(--light-grey);
@@ -74,6 +77,11 @@ body {
   line-height: 1.6;
   font-size: var(--section-paragraph);
   font-family: 'QuickSand';
+  margin-bottom: 16px;
+
+  &:last-of-type {
+    margin: 0;;
+  }
 }
 
 .banner {
@@ -137,10 +145,45 @@ body {
   margin: -32px auto var(--default-gutter);
   background: var(--light-blue);
   box-shadow: var(--box-shadow);
+  color: var(--dark-blue);
+  border-radius: var(--border-radius);
+}
+
+.psycotherapy {
+  padding: var(--default-gutter);
 }
 
 .service {
-  padding: var(--default-gutter) var(--default-gutter) calc((var(--default-gutter) * 2));
+  padding: var(--default-gutter);
+  margin-bottom: var(--default-gutter);
+}
+
+.service-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--default-gutter);
+}
+
+.service-card {
+  background: var(--light-blue);
+  box-shadow: var(--box-shadow);
+  padding: var(--default-gutter);
+  color: var(--dark-blue);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.service-card-icon {
+  display: block;
+  text-align: center;
+  margin-bottom: var(--sm-gutter);
+  font-size: var(--lg-text);
+}
+
+.footer {
+  background: var(--grey-blue);
+  position: relative;
+  width: 100%;
 }
 
 .contact {
@@ -148,12 +191,12 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: var(--default-gutter);
-  width: calc(100% - var(--default-gutter) * 2);
-  margin: -16px auto var(--default-gutter);
+  padding: var(--md-gutter);
+  margin: -16px auto 0;
   background: var(--dark-blue);
   color: var(--white);
   box-shadow: var(--box-shadow-lg);
+  border-radius: var(--border-radius);
 }
 
 .contact-title {
@@ -201,9 +244,9 @@ body {
   }
 
   .section-title {
-    font-size: var(--lg-text);
     padding-bottom: 8px;
     margin-bottom: var(--sm-gutter);
+    column-gap: var(--sm-gutter);
   }
 
   .banner {
@@ -225,12 +268,42 @@ body {
     max-width: 70vw;
   }
 
+  .psycotherapy,
   .service {
     padding-top: calc(var(--default-gutter) / 2);
   }
 
+  .service {
+    padding-bottom: var(--lg-gutter);
+    margin-bottom: var(--lg-gutter);
+  }
+
+  .service-card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: var(--default-gutter);
+  }
+
+  .service-card {
+    flex: 1;
+    max-width: calc(100% / 3 - var(--default-gutter) / 2);
+  }
+
+  .service-card-icon {
+    font-size: var(--xl-text);
+  }
+
+  .footer {
+    height: 262px;
+  }
+
   .contact {
-    max-width: 50vw;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    max-width: 60vw;
+    width: calc(100% - var(--default-gutter) * 2);
+    margin: -32px auto;
   }
 
   .contact-title {
