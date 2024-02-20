@@ -6,18 +6,18 @@
 
 @font-face {
   font-family: QuickSand;
-  src: url("../fonts/Quicksand_Book.otf"), local('Calibri');
+  src: url("../fonts/Quicksand_Book.otf"), local('Arial');
   font-display: swap;
 }
 
 @font-face {
   font-family: QuickSandBold;
-  src: url("../fonts/Quicksand_Book.otf"), local('Calibri');
+  src: url("../fonts/Quicksand_Book.otf"), local('Arial');
   font-display: swap;
 }
 
 @font-face {
   font-family: BadScriptRegular;
-  src: url("../fonts/BadScript-Regular.ttf"), local('Calibri');
+  src: url("../fonts/BadScript-Regular.ttf"), local('Arial');
   font-display: swap;
 }
