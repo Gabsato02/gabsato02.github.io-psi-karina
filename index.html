@@ -13,8 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
   </head>
   <body>
@@ -29,7 +27,7 @@
       <section class="bio container">
         <img
           class="avatar"
-          src="assets/avatar.avif"
+          src="assets/images/avatar.avif"
           alt="Foto de perfil da psicóloga Karina Shoegima"
           title="Karina Shoegima | Psicóloga"
           loading="lazy"
@@ -38,7 +36,13 @@
         <div class="bio-content">
           <h2 class="section-title">
             Quem sou eu?
-            <i class="section-title-icon fi fi-rr-woman-head"></i>
+            <img
+              class="section-title-icon"
+              src="/assets/icons/woman.svg"
+              loading="lazy"
+              alt="Ícone de mulher"
+              title="Quem sou eu?"
+            />
           </h2>
           <p class="section-paragraph">Meu nome é Karina Shoegima, sou Psicóloga Clínica (CRP 06/XXXXX) graduada pela Universidade Nove de Julho buscando aprofundamento na Terapia Cognitivo-Comportamental.</p>
           <p class="section-paragraph">Te ajudo a ressignificar sua jornada, na busca pelas respostas que procura, para uma vida mais leve.</p>
@@ -51,7 +55,7 @@
         <a 
           href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento"  
           target="_blank" 
-          class="banner-cta" 
+          class="banner-cta button" 
           title="Agendar sessão"
           id="cta"
         >
@@ -61,7 +65,13 @@
         <section class="therapy container">
           <h2 class="section-title">
             Terapia Cognitivo-Comportamental
-            <i class="fi fi-rr-books"></i>
+            <img
+              class="section-title-icon"
+              src="/assets/icons/books.svg"
+              loading="lazy"
+              alt="Ícone de livro"
+              title="Terapia Cognitivo-Comportamental"
+            />
           </h2>
           <p class="section-paragraph">É uma abordagem voltada ao presente, focada na resolução de problemas, através das mudanças de pensamentos e crenças que promovem desconfortos.</p>
           <p class="section-paragraph">É um método que pode auxiliar em estados de humor como a depressão, ansiedade, estresse e baixa auto estima, bem como em tratamento de transtornos alimentares e uso de álcool e drogas.</p>
@@ -70,7 +80,13 @@
       <section class="psycotherapy container">
         <h2 class="section-title">
           Psicoterapia
-          <i class="section-title-icon fi fi-rr-head-side-thinking"></i>
+          <img
+            class="section-title-icon"
+            src="/assets/icons/thinking.svg"
+            loading="lazy"
+            alt="Ícone de cabeça pensante"
+            title="Psicoterapia"
+          />
         </h2>
         <p class="section-paragraph">Meus atendimentos ocorrem apenas na modalidade online através da abordagem Terapia Cognitivo-Comportamental (TCC), atendo jovens e adultos a partir dos 18 anos.</p>
         <p class="section-paragraph">No início do tratamento é necessário acompanhamento semanal, podendo ser alterado conforme o avanço no processo terapêutico.</p>
@@ -80,22 +96,65 @@
       <section class="service container">
         <h2 class="section-title">
           Atendimento Online
-          <i class="section-title-icon fi fi-rr-videoconference"></i>
+          <img
+            class="section-title-icon"
+            src="/assets/icons/videoconference.svg"
+            loading="lazy"
+            alt="Ícone de cabeça videoconferência"
+            title="Atendimento Online"
+          />
         </h2>
         <div class="service-card-wrapper">
           <div class="service-card">
-            <i class="service-card-icon fi fi-rr-meeting-alt"></i>
+            <img
+              class="service-card-icon"
+              src="/assets/icons/meeting.svg"
+              loading="lazy"
+              alt="Ícone de reunião"
+              title="Psicoterapia Online"
+            />
             <p class="section-paragraph">A psicoterapia online é um facilitador para a dinâmica de vida, com todos os benefícios do atendimento presencial, mesma duração de tempo, frequência, sigilo e seguindo o código de ética.</p>
           </div>
   
           <div class="service-card">
-            <i class="service-card-icon fi fi-rr-user-headset"></i>
+            <img
+              class="service-card-icon"
+              src="/assets/icons/headset.svg"
+              loading="lazy"
+              alt="Ícone de atendimento"
+              title="Forma de atendimento online"
+            />
             <p class="section-paragraph">As sessões por atendimento online são feitas por meio de vídeo chamada (Google Meet e Whatsapp), sendo necessário telefone ou computador com câmera e conexão estável.</p>
           </div>
   
           <div class="service-card">
-            <i class="service-card-icon fi fi-rr-hand-holding-seeding"></i>
+            <img
+              class="service-card-icon"
+              src="/assets/icons/hand.svg"
+              loading="lazy"
+              alt="Ícone de mão com planta"
+              title="Acolhimento"
+            />
             <p class="section-paragraph">É importante estar em um ambiente tranquilo e com privacidade para manter o sigilo e garantir um espaço acolhedor e seguro.</p>
+          </div>
+
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="/assets/icons/document.svg"
+              loading="lazy"
+              alt="Ícone de documento"
+              title="Manual do Paciente"
+            />
+            <p class="section-paragraph">Tem dúvidas sobre o atendimento online?</p>
+            <p class="section-paragraph">Consulte o <strong>Manual do Paciente</strong></p>
+            <a
+              href="/assets/docs/manual_do_paciente_2022.pdf"
+              class="button button-dark service-card-cta"
+              download
+            >
+              Download
+            </a>
           </div>
         </div>
       </section>
@@ -105,14 +164,20 @@
       <address class="contact">
         <h3 class="contact-title">Entre em contato</h3>
         <span class="contact-subtitle">Será um prazer lhe responder</span>
-        <a
-          href="mailto:karina.psicologa@gmail.com?subject=Terapia&body=Olá, gostaria de saber mais sobre seu atendimento"
-          target="_blank"
+        <a 
+          href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento" 
+          target="_blank" 
+          title="WhatsApp" 
           class="contact-item"
-          title="Enviar e-mail"
         >
-          <i class="fi fi-rr-envelope"></i>
-          <span class="contact-item-label">karina.psicologa@gmail.com</span>
+          <img
+            class="contact-icon"
+            src="/assets/icons/whatsapp.svg"
+            loading="lazy"
+            alt="Ícone de whatsapp"
+            title="Whatsapp"
+          />
+          <span class="contact-item-label">(11) 9 4545-6841</span>
         </a>
 
         <a
@@ -121,20 +186,34 @@
           target="_blank"
           class="contact-item"
         >
-          <i class="fi fi-brands-instagram"></i>
+          <img
+            class="contact-icon"
+            src="/assets/icons/instagram.svg"
+            loading="lazy"
+            alt="Ícone de instagram"
+            title="Instagram"
+          />
           <span class="contact-item-label">@psi.karinashoegima</span>
         </a>
 
-        <a 
-          href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento" 
-          target="_blank" 
-          title="WhatsApp" 
+        <a
+          href="mailto:psi.karinashoegima@gmail.com?subject=Terapia&body=Olá, gostaria de saber mais sobre seu atendimento"
+          target="_blank"
           class="contact-item"
+          title="Enviar e-mail"
         >
-          <i class="fi fi-brands-whatsapp"></i>
-          <span class="contact-item-label">(11) 9 4545-6841</span>
+          <img
+            class="contact-icon"
+            src="/assets/icons/envelop.svg"
+            loading="lazy"
+            alt="Ícone de e-mail"
+            title="E-mail"
+          />
+          <span class="contact-item-label">psi.karinashoegima@gmail.com</span>
         </a>
       </address>
+
+      <span class="flaticon-copyright">Uicons do <a target="_blank" href="https://www.flaticon.com/uicons">Flaticon</a></span>
     </footer>
   </body>
 </html>
