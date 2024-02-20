@@ -250,10 +250,11 @@ body {
 
 .contact-icon {
   width: var(--md-text);
+  height: var(--md-text);
 }
 
 .contact-item {
-  padding: 8px;
+  padding: var(--xs-gutter);
   display: flex;
   column-gap: var(--xs-gutter);
   align-items: center;
