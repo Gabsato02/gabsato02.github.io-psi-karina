@@ -262,6 +262,7 @@ body {
   color: var(--white);
   transition: 0.4s;
   font-family: 'QuickSand';
+  height: 48px;
 }
 
 .contact-item:hover {
@@ -348,7 +349,7 @@ body {
   }
 
   .footer {
-    height: 262px;
+    height: 320px;
   }
 
   .contact {
@@ -357,7 +358,7 @@ body {
     left: 50%;
     max-width: 60vw;
     width: calc(100% - var(--default-gutter) * 2);
-    margin: -32px auto;
+    margin: -32px auto 0;
   }
 
   .contact-title {
@@ -374,10 +375,6 @@ body {
 
   .section-title {
     margin-bottom: var(--md-gutter);
-  }
-
-  .banner {
-    height: 340px;
   }
 
   .banner-overline {
