@@ -208,7 +208,7 @@ body {
   content: '';
   height: var(--md-text);
   width: var(--md-text);
-  background-image: url('/assets/icons/download-white.svg');
+  background-image: url('../assets/icons/download-white.svg');
   background-size: var(--md-text);
   background-position: center;
   background-repeat: no-repeat;
@@ -432,11 +432,11 @@ body {
   }
 
   .service-card-cta::after {
-    background-image: url('/assets/icons/download.svg');
+    background-image: url('../assets/icons/download.svg');
   }
 
   .service-card-cta:hover::after {
-    background-image: url('/assets/icons/download-white.svg');
+    background-image: url('../assets/icons/download-white.svg');
   }
 
   .button-dark:active {
