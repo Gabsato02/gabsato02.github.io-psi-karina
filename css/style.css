@@ -267,18 +267,18 @@ body {
   transform: scale(1.05);
 }
 
-.flaticon-copyright {
+.copyright {
   width: 100%;
   text-align: center;
   color: var(--dark-blue);
   height: fit-content;
   margin-top: auto;
   font-family: 'QuickSand';
-  padding: 16px;
+  padding: var(--lg-gutter) 0 var(--sm-gutter);
   font-size: var(--sm-text);
 }
 
-.flaticon-copyright a {
+.copyright a {
   color: var(--dark-blue);
 }
 
