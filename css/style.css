@@ -53,8 +53,6 @@ body {
 }
 
 .avatar {
-  content: '';
-  background: var(--grey-blue);
   height: 120px;
   width: 120px;
   flex: 1;
@@ -103,7 +101,6 @@ body {
   -webkit-background-size: cover !important;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-attachment: fixed;
   width: 100vw;
   position: relative;
   height: 240px;
@@ -377,6 +374,10 @@ body {
 
   .section-title {
     margin-bottom: var(--md-gutter);
+  }
+
+  .banner {
+    background-attachment: fixed;
   }
 
   .banner-overline {
