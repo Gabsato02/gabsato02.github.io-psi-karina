@@ -35,6 +35,13 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-16511746383');
+
+      function gtag_report_conversion(id) {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16511746383/wpjBCLqnkqAZEM-CtcE9',
+          'element_id': id
+        });
+      }
     </script>
   </head>
   <body>
@@ -82,6 +89,7 @@
           class="banner-cta button" 
           title="Agendar sessão"
           id="cta"
+          onclick="gtag_report_conversion('main-cta')"
           rel="nofollow"
         >
           Agende sua sessão
@@ -178,6 +186,7 @@
               rel="nofollow"
               class="button button-dark service-card-cta"
               download
+              onclick="gtag_report_conversion('manual-cta')"
             >
               Download
             </a>
@@ -204,6 +213,7 @@
             loading="lazy"
             alt="Ícone de e-mail"
             title="E-mail"
+            onclick="gtag_report_conversion('email-cta')"
           />
           <span class="contact-item-label">psi.karinashoegima@gmail.com</span>
         </a>
@@ -213,6 +223,7 @@
           title="Instagram"
           target="_blank"
           class="contact-item"
+          onclick="gtag_report_conversion('instagram-cta')"
         >
           <img
             class="contact-icon"
@@ -230,6 +241,7 @@
           title="WhatsApp" 
           class="contact-item"
           rel="nofollow"
+          onclick="gtag_report_conversion('whatsapp-cta')"
         >
           <img
             class="contact-icon"
