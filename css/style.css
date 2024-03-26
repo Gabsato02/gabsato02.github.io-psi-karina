@@ -53,6 +53,7 @@ body {
 }
 
 .avatar {
+  aspect-ratio: 1;
   height: 120px;
   width: 120px;
   flex: 1;
@@ -141,6 +142,11 @@ body {
   bottom: var(--xl-gutter);
   padding: var(--sm-gutter);
   font-size: var(--lg-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--xs-gutter);
+  width: 100%;
 }
 
 .banner-cta:active {
@@ -316,6 +322,7 @@ body {
   .banner-cta {
     padding: var(--md-gutter);
     font-size: var(--xl-text);
+    width: max-content;
   }
 
   .therapy {
@@ -446,10 +453,6 @@ body {
     color: var(--white);
   }
 
-  .therapy {
-    max-width: 50vw;
-  }
-
   .service-card {
     width: calc(100% / 3 - var(--default-gutter) / 2);
     min-width: auto;
@@ -461,5 +464,13 @@ body {
 
   .contact {
     max-width: 40vw;
+  }
+}
+
+
+@media (min-width: 1288px) {
+  .therapy {
+    width: 60vw;
+    max-width: var(--lg-container);
   }
 }
