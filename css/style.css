@@ -521,14 +521,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: var(--sm-gutter);
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'QuickSandBold';
+    font-weight: 700;
     position: fixed;
     bottom: var(--sm-gutter);
     right: var(--sm-gutter);
     z-index: 1000;
     background: var(--green);
-    border-radius: 50%;
+    border-radius: 200px;
     padding: var(--sm-gutter);
     box-shadow: var(--box-shadow-lg);
+    width: fit-content;
   }
 
   .floating-cta-icon {
