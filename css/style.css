@@ -171,7 +171,6 @@ body {
 
 .service {
   padding: var(--default-gutter);
-  margin-bottom: var(--default-gutter);
 }
 
 .service-card-wrapper {
@@ -216,6 +215,34 @@ body {
   background-size: var(--md-text);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.instagram-embed {
+  padding: var(--default-gutter);
+  margin-bottom: var(--default-gutter);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-embed iframe {
+  margin: 0 !important;
+}
+
+.instagram-embed-quote {
+  line-height: 1.4;
+  margin-bottom: var(--default-gutter) !important;
+  color: var(--dark-blue);
+  font-family: 'QuickSand';
+}
+
+.instagram-embed-quote strong {
+  font-weight: 700;
+}
+
+.instagram-embed .section-title {
+  width: 100%;
 }
 
 .footer {
@@ -340,14 +367,11 @@ body {
   }
 
   .therapy,
-  .service {
+  .service,
+  .instagram-embed {
     padding-top: calc(var(--default-gutter) / 2);
   }
 
-  .service {
-    padding-bottom: var(--lg-gutter);
-    margin-bottom: var(--lg-gutter);
-  }
 
   .service-card-wrapper {
     flex-direction: row;
@@ -362,6 +386,11 @@ body {
 
   .service-card-icon {
     width: var(--xl-text);
+  }
+
+  .instagram-embed {
+    padding-bottom: var(--lg-gutter);
+    margin-bottom: var(--lg-gutter);
   }
 
   .footer {
@@ -509,6 +538,7 @@ body {
 
   .footer {
     padding-bottom: 0;
+    height: 320px;
   }
 }
 
