@@ -36,7 +36,7 @@
 
       gtag('config', 'AW-16511746383');
 
-      function gtag_report_conversion(url) {
+      function gtag_report_conversion(location, url) {
         var callback = function () {
           if (typeof(url) != 'undefined') {
             window.location = url;
@@ -44,7 +44,8 @@
         };
         gtag('event', 'conversion', {
             'send_to': 'AW-16511746383/xDiiCIilmqAZEM-CtcE9',
-            'event_callback': callback
+            'event_callback': callback,
+            'location': location,
         });
         return false;
       }
@@ -115,7 +116,7 @@
           class="banner-cta button" 
           title="Agendar sessão"
           id="cta"
-          onclick="gtag_report_conversion()"
+          onclick="gtag_report_conversion('main-cta')"
           rel="nofollow"
         >
           Clique aqui e marque sua sessão
@@ -220,6 +221,23 @@
       </section>
     </main>
 
+    <a
+      class="floating-cta"
+      href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento" 
+      target="_blank" 
+      title="WhatsApp" 
+      rel="nofollow"
+      onclick="gtag_report_conversion('whatsapp-floating-cta')"
+    >
+      <img
+        class="floating-cta-icon"
+        src="./assets/icons/whatsapp.svg"
+        loading="lazy"
+        alt="Ícone de whatsapp"
+        title="Whatsapp"
+      />
+    </a>
+
     <footer class="footer">
       <address class="contact">
         <h3 class="contact-title">Entre em contato</h3>
@@ -231,14 +249,14 @@
           class="contact-item"
           title="Enviar e-mail"
           rel="nofollow"
+          onclick="gtag_report_conversion('email-footer-cta')"
         >
           <img
             class="contact-icon"
             src="./assets/icons/envelop.svg"
             loading="lazy"
             alt="Ícone de e-mail"
-            title="E-mail"
-            onclick="gtag_report_conversion()"
+            title="E-mail" 
           />
           <span class="contact-item-label">psi.karinashoegima@gmail.com</span>
         </a>
@@ -265,7 +283,7 @@
           title="WhatsApp" 
           class="contact-item"
           rel="nofollow"
-          onclick="gtag_report_conversion()"
+          onclick="gtag_report_conversion('whatsapp-footer-cta')"
         >
           <img
             class="contact-icon"
