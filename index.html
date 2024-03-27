@@ -36,11 +36,17 @@
 
       gtag('config', 'AW-16511746383');
 
-      function gtag_report_conversion(id) {
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
         gtag('event', 'conversion', {
-          'send_to': 'AW-16511746383/wpjBCLqnkqAZEM-CtcE9',
-          'element_id': id
+            'send_to': 'AW-16511746383/xDiiCIilmqAZEM-CtcE9',
+            'event_callback': callback
         });
+        return false;
       }
     </script>
 
@@ -109,7 +115,7 @@
           class="banner-cta button" 
           title="Agendar sessão"
           id="cta"
-          onclick="gtag_report_conversion('main-cta')"
+          onclick="gtag_report_conversion()"
           rel="nofollow"
         >
           Clique aqui e marque sua sessão
@@ -206,7 +212,6 @@
               rel="nofollow"
               class="button button-dark service-card-cta"
               download
-              onclick="gtag_report_conversion('manual-cta')"
             >
               Download
             </a>
@@ -233,7 +238,7 @@
             loading="lazy"
             alt="Ícone de e-mail"
             title="E-mail"
-            onclick="gtag_report_conversion('email-cta')"
+            onclick="gtag_report_conversion()"
           />
           <span class="contact-item-label">psi.karinashoegima@gmail.com</span>
         </a>
@@ -243,7 +248,6 @@
           title="Instagram"
           target="_blank"
           class="contact-item"
-          onclick="gtag_report_conversion('instagram-cta')"
         >
           <img
             class="contact-icon"
@@ -261,7 +265,7 @@
           title="WhatsApp" 
           class="contact-item"
           rel="nofollow"
-          onclick="gtag_report_conversion('whatsapp-cta')"
+          onclick="gtag_report_conversion()"
         >
           <img
             class="contact-icon"
