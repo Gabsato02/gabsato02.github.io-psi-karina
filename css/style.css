@@ -136,10 +136,9 @@ body {
 
 .banner-cta {
   z-index: 2;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  bottom: var(--xl-gutter);
+  position: fixed;
+  left: 0;
+  bottom: 0;
   padding: var(--sm-gutter);
   font-size: var(--lg-text);
   display: flex;
@@ -153,7 +152,7 @@ body {
   background-color: var(--dark-blue);
 }
 
-.therapy {
+.psycotherapy {
   z-index: 1;
   position: relative;
   background: var(--white);
@@ -166,7 +165,7 @@ body {
   border-radius: var(--border-radius);
 }
 
-.psycotherapy {
+.therapy {
   padding: var(--default-gutter);
 }
 
@@ -220,6 +219,7 @@ body {
 }
 
 .footer {
+  padding-bottom: 80px;
   background: var(--grey-blue);
   position: relative;
   width: 100%;
@@ -289,6 +289,12 @@ body {
   color: var(--dark-blue);
 }
 
+@media (min-width: 443px) {
+  .footer {
+    padding-bottom: 56px;
+  }
+}
+
 @media (min-width: 768px) {
   .header .title {
     font-size: var(--xl-text);
@@ -310,7 +316,8 @@ body {
   }
 
   .banner {
-    height: 480px;
+    height: 280px;
+    min-height: 280px;
   }
 
   .banner-overline {
@@ -322,14 +329,13 @@ body {
   .banner-cta {
     padding: var(--md-gutter);
     font-size: var(--xl-text);
-    width: max-content;
   }
 
-  .therapy {
+  .psycotherapy {
     max-width: 70vw;
   }
 
-  .psycotherapy,
+  .therapy,
   .service {
     padding-top: calc(var(--default-gutter) / 2);
   }
@@ -355,7 +361,7 @@ body {
   }
 
   .footer {
-    height: 320px;
+    height: 400px;
   }
 
   .contact {
@@ -385,6 +391,8 @@ body {
 
   .banner {
     background-attachment: fixed;
+    height: 480px;
+    min-height: 480px;
   }
 
   .banner-overline {
@@ -403,6 +411,15 @@ body {
     background-size: 50.5% calc(var(--progress,0%)/2 + .5%);
     outline-offset: .1em;
     transition: background-size .4s, background-position 0s .4s;
+  }
+
+  .banner-cta {
+    position: absolute;
+    bottom: initial;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: max-content;
+    bottom: calc(var(--xl-gutter) + var(--lg-gutter));
   }
 
   .banner-cta:after {
@@ -469,7 +486,7 @@ body {
 
 
 @media (min-width: 1288px) {
-  .therapy {
+  .psycotherapy {
     width: 60vw;
     max-width: var(--lg-container);
   }
