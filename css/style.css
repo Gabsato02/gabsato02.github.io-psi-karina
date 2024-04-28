@@ -123,7 +123,7 @@ body {
   color: var(--white);
   font-size: var(--md-text);
   text-shadow: var(--text-shadow);
-  line-height: 1.5;
+  line-height: 1.6;
   font-family: 'BadScriptRegular';
 }
 
@@ -174,8 +174,57 @@ body {
   border-radius: var(--border-radius);
 }
 
-.therapy {
+.disorders {
   padding: var(--default-gutter);
+}
+
+.list-item {
+  margin-bottom: var(--md-gutter);
+  padding: var(--sm-gutter) var(--sm-gutter) var(--sm-gutter) calc(var(--sm-gutter) * 2);
+  border-radius: var(--border-radius);
+  background: var(--medium-blue);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  color: var(--white);
+}
+
+.list-item::after {
+  background: var(--white);
+  content: '';
+  top: var(--sm-gutter);
+  bottom: var(--sm-gutter);
+  left: var(--sm-gutter);
+  height: calc(100% - var(--sm-gutter) * 2);
+  width: 2px;
+  display: block;
+  position: absolute;
+  border-radius: var(--border-radius);
+}
+
+.list-item:nth-child(even) {
+  background: var(--light-blue);
+  margin-left: auto;
+  color: var(--dark-blue);
+}
+
+.list-item:nth-child(even)::after {
+  left: var(--sm-gutter);
+  right: initial;
+  background: var(--dark-blue);
+}
+
+.list-item-title {
+  display: block;
+  font-family: 'QuickSandBold';
+  font-weight: 700;
+  margin-bottom: var(--xs-gutter);
+}
+
+.list-item-description {
+  display: block;
+  font-family: 'QuickSand';
+  line-height: 1.5;
+  margin: 0;
 }
 
 .service {
@@ -374,12 +423,33 @@ body {
     max-width: 70vw;
   }
 
-  .therapy,
+  .disorders,
   .service,
   .instagram-embed {
     padding-top: calc(var(--default-gutter) / 2);
   }
 
+  .list-item {
+    width: 90%;
+  }
+
+  .list-item:nth-child(even) {
+    margin-left: auto;
+  }
+  
+  .list-item-title {
+    display: block;
+    font-family: 'QuickSandBold';
+    font-weight: 700;
+    margin-bottom: var(--xs-gutter);
+  }
+  
+  .list-item-description {
+    display: block;
+    font-family: 'QuickSand';
+    line-height: 1.5;
+    margin: 0;
+  }
 
   .service-card-wrapper {
     flex-direction: row;
@@ -495,6 +565,10 @@ body {
   .button-dark:hover {
     color: var(--white);
     box-shadow: 0 0 0 .1em inset var(--dark-blue); 
+  }
+
+  .list-item {
+    width: 80%;
   }
 
   .service-card-cta::after {
