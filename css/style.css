@@ -113,14 +113,23 @@ body {
 }
 
 .banner-overline {
+  width: calc(100% - var(--default-gutter) * 2);
+  text-align: center;
   z-index: 2;
   position: absolute;
-  left: var(--sm-gutter);
+  left: 50%;
+  transform: translateX(-50%);
   top: var(--md-gutter);
   color: var(--white);
   font-size: var(--md-text);
   text-shadow: var(--text-shadow);
+  line-height: 1.5;
   font-family: 'BadScriptRegular';
+}
+
+.banner-overline span {
+  display: block;
+  margin-top: var(--xs-gutter);
 }
 
 .button {
@@ -352,7 +361,6 @@ body {
   }
 
   .banner-overline {
-    left: var(--md-gutter);
     top: var(--lg-gutter);
     font-size: var(--lg-text);
   }
@@ -430,7 +438,6 @@ body {
   }
 
   .banner-overline {
-    left: var(--lg-gutter);
     top: var(--xl-gutter);
   }
 
