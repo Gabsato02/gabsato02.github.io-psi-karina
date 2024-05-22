@@ -26,6 +26,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
 
+    <script defer src="js/script.js" />
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16511746383"></script>
     <script>
@@ -70,15 +72,31 @@
     </script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-container container">
-        <h1 class="title">Karina Shoegima</h1>
-        <span class="crp">CRP 06/201820</span>
+        <div class="header-container-info">
+          <h1 class="title">Karina Shoegima</h1>
+          <span class="crp">CRP 06/201820</span>
+        </div>
+        <div class="menu-toggler" id="menu-toggler">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </div>
     </header>
 
+    <div class="toggle-menu" id="toggle-menu">
+      <a href="#bio">Quem sou eu?</a>
+      <a href="#psycotherapy">Como é o processo de psicoterapia?</a>
+      <a href="#disorders">Quando buscar ajuda?</a>
+      <a href="#service">Como funciona o atendimento online?</a>
+      <a href="#instagram">Um recadinho...</a>
+      <a href="#footer">Contato</a>
+    </div>
+
     <main class="main">
-      <section class="bio container">
+      <section class="bio container" id="bio">
         <img
           class="avatar"
           src="./assets/images/avatar.png"
@@ -121,7 +139,7 @@
           Clique aqui e marque sua sessão
         </a>
       </section>
-      <section class="psycotherapy container">
+      <section class="psycotherapy container" id="psycotherapy">
         <h2 class="section-title">
           Como é o processo de psicoterapia?
           <img
@@ -136,7 +154,7 @@
         <p class="section-paragraph">Por meio da identificação de pensamentos e <strong>emoções que geram desconfortos</strong>, a TCC auxilia na <strong>mudança de crenças</strong> e comportamentos que impactam a dinâmica de vida, buscando assim uma jornada mais valorosa.</p>
         <p class="section-paragraph">O processo é <strong>colaborativo</strong>, com participação ativa de ambos, um trabalho em equipe, construindo um espaço de afeto, segurança, confiança, compreensão, escuta ativa e acolhimento, <strong>sem julgamentos</strong>.</p>
       </section>
-      <section class="disorders container">
+      <section class="disorders container" id="disorders">
         <h2 class="section-title">
           Quando buscar ajuda?
           <img
@@ -180,7 +198,7 @@
           </li>
         </ul>
       </section>
-      <section class="service container">
+      <section class="service container" id="service">
         <h2 class="section-title">
           Como funciona o atendimento online?
           <img
@@ -247,7 +265,7 @@
         </div>
       </section>
 
-      <section class="instagram-embed container">
+      <section class="instagram-embed container" id="instagram">
         <h2 class="section-title">
           Um recadinho
           <img
@@ -287,7 +305,7 @@
       Entre em contato
     </a>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <address class="contact">
         <h3 class="contact-title">Entre em contato</h3>
         <span class="contact-subtitle">Será um prazer lhe responder</span>
