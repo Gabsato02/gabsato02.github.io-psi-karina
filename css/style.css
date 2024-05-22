@@ -11,8 +11,7 @@ body {
   z-index: 10;
   background: var(--white);
   padding: var(--default-gutter);
-  border-bottom: 1px solid var(--grey-blue);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-sm);
   font-family: 'NeutralFace';
 
   .title {
@@ -47,6 +46,9 @@ body {
 .bio {
   background: var(--white);
   display: flex;
+  flex-direction: column;
+  row-gap: var(--md-gutter);
+  align-items: center;
   justify-content: space-between;
   column-gap: var(--default-gutter);
   padding: var(--default-gutter);
@@ -140,7 +142,7 @@ body {
   text-shadow: var(--text-shadow);
   color: var(--white);
   background: var(--medium-blue);
-  box-shadow: var(--box-shadow-lg);
+  box-shadow: var(--box-shadow-sm);
 }
 
 .banner-cta {
@@ -155,6 +157,7 @@ body {
   justify-content: center;
   column-gap: var(--xs-gutter);
   width: 100%;
+  background: var(--green);
 
   +:active {
     background-color: var(--dark-blue);
@@ -165,11 +168,8 @@ body {
   z-index: 1;
   position: relative;
   background: var(--white);
-  padding: var(--default-gutter);
-  width: calc(100% - var(--default-gutter) * 2);
-  margin: -32px auto var(--default-gutter);
-  background: var(--light-blue);
-  box-shadow: var(--box-shadow);
+  padding: calc(var(--default-gutter) + 12px) var(--default-gutter) var(--default-gutter);
+  background: var(--white);
   color: var(--dark-blue);
   border-radius: var(--border-radius);
 }
@@ -183,7 +183,7 @@ body {
   padding: var(--sm-gutter) var(--sm-gutter) var(--sm-gutter) calc(var(--sm-gutter) * 2);
   border-radius: var(--border-radius);
   background: var(--medium-blue);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-sm);
   position: relative;
   color: var(--white);
 
@@ -238,8 +238,6 @@ body {
 }
 
 .service-card {
-  background: var(--light-blue);
-  box-shadow: var(--box-shadow);
   padding: var(--default-gutter);
   color: var(--dark-blue);
   border-radius: var(--border-radius);
@@ -305,7 +303,6 @@ body {
 
 .footer {
   padding-bottom: 80px;
-  background: var(--grey-blue);
   position: relative;
   width: 100%;
   display: flex;
@@ -318,16 +315,14 @@ body {
   text-align: center;
   align-items: center;
   padding: var(--md-gutter);
-  margin: -16px auto 0;
-  background: var(--dark-blue);
-  color: var(--white);
-  box-shadow: var(--box-shadow-lg);
+  margin: 0 auto;
+  color: var(--dark-blue);
   border-radius: var(--border-radius);
   max-width: 100%;
 }
 
 .contact-title {
-  font-size: var(--lg-text);
+  font-size: var(--xl-text);
   margin-bottom: var(--xs-gutter);
   font-family: 'QuickSandBold';
 }
@@ -336,6 +331,7 @@ body {
   display: block;
   margin-bottom: var(--lg-gutter);
   font-family: 'QuickSand';
+  font-style: italic;
 }
 
 .contact-icon {
@@ -349,7 +345,7 @@ body {
   column-gap: var(--xs-gutter);
   align-items: center;
   text-decoration: none;
-  color: var(--white);
+  color: var(--dark-blue);
   transition: 0.4s;
   font-family: 'QuickSand';
   height: 48px;
@@ -362,26 +358,20 @@ body {
 .copyright {
   width: 100%;
   text-align: center;
-  color: var(--dark-blue);
+  color: var(--light-grey);
   height: fit-content;
   margin-top: auto;
   font-family: 'QuickSand';
-  padding: var(--lg-gutter) 0 var(--sm-gutter);
+  padding: var(--md-gutter) 0 var(--sm-gutter);
   font-size: var(--sm-text);
 
   a {
-    color: var(--dark-blue);
+    color: var(--grey-blue);
   }  
 }
 
 .floating-cta {
   display: none;
-}
-
-@media (min-width: 443px) {
-  .footer {
-    padding-bottom: 56px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -393,6 +383,12 @@ body {
     .crp {
       font-size: var(--md-text);
     }
+  }
+
+  .bio {
+    flex-direction: row;
+    row-gap: 0;
+    align-items: flex-start;
   }
 
   .avatar {
@@ -419,10 +415,6 @@ body {
   .banner-cta {
     padding: var(--md-gutter);
     font-size: var(--xl-text);
-  }
-
-  .psycotherapy {
-    max-width: 70vw;
   }
 
   .disorders,
@@ -474,21 +466,10 @@ body {
   }
 
   .footer {
-    height: 400px;
     padding-bottom: 80px;
   }
 
-  .contact {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    max-width: 60vw;
-    width: calc(100% - var(--default-gutter) * 2);
-    margin: -32px auto 0;
-  }
-
   .contact-title {
-    font-size: var(--xl-text);
     margin-bottom: var(--sm-gutter);
   }
 }
@@ -553,8 +534,12 @@ body {
       width: 100%;
       top: 0;
       left: 0;
-      box-shadow: var(--box-shadow-lg);
+      box-shadow: var(--box-shadow);
     }
+  }
+
+  .psycotherapy {
+    padding-top: calc(var(--default-gutter) + 16px);
   }
 
   .button-dark {
@@ -596,10 +581,6 @@ body {
     margin-top: auto;
   }
 
-  .contact {
-    max-width: 600px;
-  }
-
   .floating-cta {
     display: flex;
     align-items: center;
@@ -616,7 +597,7 @@ body {
     background: var(--green);
     border-radius: 200px;
     padding: var(--sm-gutter);
-    box-shadow: var(--box-shadow-lg);
+    box-shadow: var(--box-shadow);
     width: fit-content;
   }
 
@@ -628,13 +609,5 @@ body {
   .footer {
     padding-bottom: 0;
     height: 320px;
-  }
-}
-
-
-@media (min-width: 1288px) {
-  .psycotherapy {
-    width: 60vw;
-    max-width: var(--lg-container);
   }
 }
