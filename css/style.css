@@ -191,6 +191,7 @@ body {
   position: relative;
   height: 240px;
   min-height: 240px;
+  margin: var(--default-gutter) 0;
 }
 
 .overline-container {
@@ -251,7 +252,7 @@ body {
   z-index: 1;
   position: relative;
   background: var(--white);
-  padding: calc(var(--default-gutter) + 12px) var(--default-gutter) var(--default-gutter);
+  padding: var(--default-gutter);
   background: var(--white);
   color: var(--dark-blue);
   border-radius: var(--border-radius);
@@ -301,13 +302,18 @@ body {
   font-family: 'QuickSandBold';
   font-weight: 700;
   margin-bottom: var(--xs-gutter);
+  font-size: var(--section-paragraph);
 }
 
 .list-item-description {
   display: block;
   font-family: 'QuickSand';
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
+}
+
+.list-item-description strong {
+  font-weight: 700;
 }
 
 .service {
@@ -358,7 +364,6 @@ body {
 
 .instagram-embed {
   padding: var(--default-gutter);
-  margin-bottom: var(--default-gutter);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -374,9 +379,7 @@ body {
 }
 
 .instagram-embed-quote {
-  line-height: 1.4;
   margin-bottom: var(--default-gutter) !important;
-  color: var(--dark-blue);
   font-family: 'QuickSand';
 
   strong {
@@ -519,11 +522,6 @@ body {
     font-size: var(--xl-text);
   }
 
-  .disorders,
-  .service,
-  .instagram-embed {
-    padding-top: calc(var(--default-gutter) / 2);
-  }
 
   .list-item {
     width: 90%;
@@ -560,11 +558,6 @@ body {
 
   .service-card-icon {
     width: var(--xl-text);
-  }
-
-  .instagram-embed {
-    padding-bottom: var(--lg-gutter);
-    margin-bottom: var(--lg-gutter);
   }
 
   .footer {
@@ -649,10 +642,6 @@ body {
       left: 0;
       box-shadow: var(--box-shadow);
     }
-  }
-
-  .psycotherapy {
-    padding-top: calc(var(--default-gutter) + 16px);
   }
 
   .button-dark {
