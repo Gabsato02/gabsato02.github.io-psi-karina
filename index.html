@@ -78,14 +78,14 @@
       <a href="#bio">Quem sou eu?</a>
       <a href="#instagram">Antes de tudo, um recadinho...</a>
       <a href="#psicoterapia">Como é o processo de psicoterapia?</a>
-      <a href="#transtornos">Quando buscar ajuda?</a>
       <a href="#atendimento">Como funciona o atendimento online?</a>
+      <a href="#transtornos">Quando buscar ajuda?</a>
       <a href="#footer">Contato</a>
     </div>
 
     <main class="main">
       <section class="bio container" id="bio">
-        <img
+        <!-- <img
           class="avatar"
           src="./assets/images/avatar.png"
           alt="Foto de perfil da psicóloga Karina Shoegima"
@@ -93,16 +93,14 @@
           loading="lazy"
           width="120"
           height="120"
-        />
+        /> -->
 
         <div class="bio-content">
           <h2 class="section-title">
             Quem sou eu?
-
           </h2>
           <p class="section-paragraph">Meu nome é <strong>Karina Shoegima</strong>, sou graduada em Psicologia pela <strong>Universidade Nove de Julho</strong> e pós-graduanda em Terapias Cognitivo-Comportamentais pela <strong>PUC</strong>.</p>
-          <p class="section-paragraph">Trabalho com atendimento clínico a adultos, na modalidade <strong>100% online</strong>.</p>
-          <p class="section-paragraph">Te ajudo a <strong>ressignificar sua jornada</strong>, na busca pelas respostas que procura, para uma vida mais leve.</p>
+          <p class="section-paragraph">Estou aqui para te ajudar a <strong>ressignificar sua jornada</strong>, na busca pelas respostas que procura, para uma vida mais leve.</p>
           </div>
       </section>
 
@@ -131,9 +129,68 @@
         <h2 class="section-title">
           Como é o processo de psicoterapia?
         </h2>
-        <p class="section-paragraph">As sessões de psicoterapia são realizadas de forma 100% online, através da <strong>Terapia Cognitivo-Comportamental (TCC)</strong>, uma abordagem voltada ao presente, focada na resolução de problemas e em promover <strong>autonomia</strong> ao paciente.</p>
-        <p class="section-paragraph">Por meio da identificação de pensamentos e <strong>emoções que geram desconfortos</strong>, a TCC auxilia na <strong>mudança de crenças</strong> e comportamentos que impactam a dinâmica de vida, buscando assim uma jornada mais valorosa.</p>
-        <p class="section-paragraph">O processo é <strong>colaborativo</strong>, com participação ativa de ambos, um trabalho em equipe, construindo um espaço de afeto, segurança, confiança, compreensão, escuta ativa e acolhimento, <strong>sem julgamentos</strong>.</p>
+        <p class="section-paragraph">Por meio da identificação de pensamentos e emoções que geram desconfortos, a <strong>Terapia Cognitivo-Comportamental (TCC)</strong> auxilia na mudança de crenças e comportamentos que impactam a dinâmica de vida.</p>
+        <p class="section-paragraph">O processo é <strong>colaborativo</strong>, com participação ativa de ambos. Um trabalho em equipe.</p>
+      </section>
+
+      <section class="service container" id="atendimento">
+        <h2 class="section-title">
+          Como funciona o atendimento online?
+        </h2>
+        <div class="service-card-wrapper">
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="./assets/icons/meeting.svg"
+              loading="lazy"
+              alt="Ícone de reunião"
+              title="Psicoterapia Online"
+            />
+            <p class="section-paragraph">A psicoterapia online é um <strong>facilitador para a dinâmica de vida</strong>, com todos os benefícios do atendimento presencial, mesma duração de tempo, frequência, sigilo e seguindo o código de ética.</p>
+          </div>
+  
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="./assets/icons/headset.svg"
+              loading="lazy"
+              alt="Ícone de atendimento"
+              title="Forma de atendimento online"
+            />
+            <p class="section-paragraph">As sessões por atendimento online são feitas por meio de vídeo chamada (<strong>Google Meet</strong> e <strong>Whatsapp</strong>), com duração de 50 minutos.</p>
+          </div>
+  
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="./assets/icons/hand.svg"
+              loading="lazy"
+              alt="Ícone de mão com planta"
+              title="Acolhimento"
+            />
+            <p class="section-paragraph">É importante estar em um ambiente tranquilo e com privacidade para manter o sigilo e garantir um <strong>espaço acolhedor</strong> e seguro.</p>
+          </div>
+
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="./assets/icons/document.svg"
+              loading="lazy"
+              alt="Ícone de documento"
+              title="Manual do Paciente"
+            />
+            <p class="section-paragraph">Tem dúvidas sobre o atendimento online?</p>
+            <p class="section-paragraph">Consulte o <strong>Manual do Paciente</strong></p>
+            <a
+              href="./assets/docs/manual_do_paciente.pdf"
+              rel="nofollow"
+              class="button button-dark service-card-cta"
+              download
+            >
+              Download
+            </a>
+          </div>
+        </div>
       </section>
 
       <section id="banner" class="banner" title="Foto de Joseph Chan na Unsplash">
@@ -146,7 +203,6 @@
           class="banner-cta button" 
           title="Agendar sessão"
           id="cta"
-          onclick="gtag_report_conversion('main-cta')"
           rel="nofollow"
         >
           Clique aqui e marque sua sessão
@@ -190,65 +246,7 @@
           </li>
         </ul>
       </section>
-      <section class="service container" id="atendimento">
-        <h2 class="section-title">
-          Como funciona o atendimento online?
-        </h2>
-        <div class="service-card-wrapper">
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/meeting.svg"
-              loading="lazy"
-              alt="Ícone de reunião"
-              title="Psicoterapia Online"
-            />
-            <p class="section-paragraph">A psicoterapia online é um <strong>facilitador para a dinâmica de vida</strong>, com todos os benefícios do atendimento presencial, mesma duração de tempo, frequência, sigilo e seguindo o código de ética.</p>
-          </div>
-  
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/headset.svg"
-              loading="lazy"
-              alt="Ícone de atendimento"
-              title="Forma de atendimento online"
-            />
-            <p class="section-paragraph">As sessões por atendimento online são feitas por meio de vídeo chamada (<strong>Google Meet</strong> e <strong>Whatsapp</strong>), sendo necessário telefone ou computador com câmera e conexão estável.</p>
-          </div>
-  
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/hand.svg"
-              loading="lazy"
-              alt="Ícone de mão com planta"
-              title="Acolhimento"
-            />
-            <p class="section-paragraph">É importante estar em um ambiente tranquilo e com privacidade para manter o sigilo e garantir um <strong>espaço acolhedor</strong> e seguro.</p>
-          </div>
-
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/document.svg"
-              loading="lazy"
-              alt="Ícone de documento"
-              title="Manual do Paciente"
-            />
-            <p class="section-paragraph">Tem dúvidas sobre o atendimento online?</p>
-            <p class="section-paragraph">Consulte o <strong>Manual do Paciente</strong></p>
-            <a
-              href="./assets/docs/manual_do_paciente.pdf"
-              rel="nofollow"
-              class="button button-dark service-card-cta"
-              download
-            >
-              Download
-            </a>
-          </div>
-        </div>
-      </section>
+      
     </main>
 
     <a
@@ -258,7 +256,6 @@
       target="_blank" 
       title="WhatsApp" 
       rel="nofollow"
-      onclick="gtag_report_conversion('whatsapp-floating-cta')"
     >
       <img
         class="floating-cta-icon"
@@ -281,7 +278,6 @@
           class="contact-item"
           title="Enviar e-mail"
           rel="nofollow"
-          onclick="gtag_report_conversion('email-footer-cta')"
         >
           <img
             class="contact-icon"
@@ -316,7 +312,6 @@
           class="contact-item"
           id="contact-item-whatsapp"
           rel="nofollow"
-          onclick="gtag_report_conversion('whatsapp-footer-cta')"
         >
           <img
             class="contact-icon"

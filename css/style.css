@@ -1,5 +1,6 @@
 body {
   color: var(--black);
+  background: var(--white);
   height: fit-content;
   max-width: 100vw;
   overflow-x: hidden;
@@ -127,13 +128,15 @@ body {
 }
 
 .bio {
-  background: var(--white);
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--md-gutter);
-  align-items: center;
-  justify-content: space-between;
+  background: url('../assets/images/bio-background-mobile.webp');
+  background-size: cover;
+  background-position: 45% 80%;
   column-gap: var(--default-gutter);
+  padding-bottom: 300px;
+}
+
+.bio-content {
+  background: rgba(var(--white-rgb), 0.6);
   padding: var(--default-gutter);
 }
 
@@ -191,7 +194,6 @@ body {
   position: relative;
   height: 240px;
   min-height: 240px;
-  margin: var(--default-gutter) 0;
 }
 
 .overline-container {
@@ -251,11 +253,10 @@ body {
 .psycotherapy {
   z-index: 1;
   position: relative;
-  background: var(--white);
   padding: var(--default-gutter);
-  background: var(--white);
   color: var(--dark-blue);
-  border-radius: var(--border-radius);
+  background: rgba(var(--light-blue-rgb), 0.5);
+  border: 1px solid var(--light-blue);
 }
 
 .disorders {
@@ -461,6 +462,10 @@ body {
 }
 
 @media (min-width: 424px) {
+  .bio {
+    background-position: 25% 75%;
+  }
+
   .footer {
     padding-bottom: 56px;
   }
@@ -491,9 +496,16 @@ body {
   }
 
   .bio {
-    flex-direction: row;
-    row-gap: 0;
-    align-items: flex-start;
+    background: url('../assets/images/bio-background.webp');
+    background-position: 0 65%;
+    background-size: cover;
+    padding-bottom: 0;
+    max-width: calc(var(--lg-container) - 64px);
+  }
+  
+  .bio-content {
+    width: 70%;
+    margin-left: auto;
   }
 
   .avatar {
@@ -711,5 +723,17 @@ body {
   .footer {
     padding-bottom: 0;
     height: 320px;
+  }
+}
+
+@media (min-width: 1225px) {
+  .bio {
+    margin-top: var(--default-gutter);
+  }
+
+  .bio,
+  .psycotherapy {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-sm);
   }
 }
