@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: QuickSandBold;
-  src: url("../fonts/Quicksand_Book.otf"), local('Arial');
+  src: url("../fonts/Quicksand_Bold.otf"), local('Arial');
   font-display: swap;
 }
 
