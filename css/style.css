@@ -128,16 +128,20 @@ body {
 }
 
 .bio {
-  background: url('../assets/images/bio-background-mobile.webp');
+  background: url('../assets/images/bio-background-mobile2.webp');
   background-size: cover;
-  background-position: 45% 80%;
+  background-position: 45% 60%;
   column-gap: var(--default-gutter);
   padding-bottom: 300px;
 }
 
 .bio-content {
-  background: rgba(var(--white-rgb), 0.6);
+  background: rgba(var(--white-rgb), 0.8);
   padding: var(--default-gutter);
+}
+
+.bio-content .section-title {
+  border-color: var(--grey-blue);
 }
 
 .avatar {
@@ -496,8 +500,8 @@ body {
   }
 
   .bio {
-    background: url('../assets/images/bio-background.webp');
-    background-position: 0 65%;
+    background: url('../assets/images/bio-background2.webp');
+    background-position: 0 80%;
     background-size: cover;
     padding-bottom: 0;
     max-width: calc(var(--lg-container) - 64px);
