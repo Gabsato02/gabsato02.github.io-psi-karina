@@ -162,8 +162,8 @@ body {
   padding-bottom: 4px;
   border-bottom: 1px solid var(--light-grey);
   margin-bottom: var(--xs-gutter);
-  font-family: 'QuickSandBold';
-  font-weight: 500;
+  font-family: 'QuickSand';
+  font-weight: 700;
 }
 
 .section-paragraph {
@@ -173,7 +173,7 @@ body {
   margin-bottom: 16px;
 
   strong {
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &:last-of-type {
@@ -225,8 +225,8 @@ body {
 }
 
 .button {
-  font-family: 'QuickSandBold';
-  font-weight: 500;
+  font-family: 'QuickSand';
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   text-shadow: var(--text-shadow);
@@ -304,8 +304,8 @@ body {
 
 .list-item-title {
   display: block;
-  font-family: 'QuickSandBold';
-  font-weight: 500;
+  font-family: 'QuickSand';
+  font-weight: 700;
   margin-bottom: var(--xs-gutter);
   font-size: var(--section-paragraph);
 }
@@ -318,7 +318,7 @@ body {
 }
 
 .list-item-description strong {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .service {
@@ -388,7 +388,7 @@ body {
   font-family: 'QuickSand';
 
   strong {
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -415,7 +415,7 @@ body {
 .contact-title {
   font-size: var(--xl-text);
   margin-bottom: var(--xs-gutter);
-  font-family: 'QuickSandBold';
+  font-family: 'QuickSand';
 }
 
 .contact-subtitle {
@@ -549,8 +549,8 @@ body {
 
   .list-item-title {
     display: block;
-    font-family: 'QuickSandBold';
-    font-weight: 500;
+    font-family: 'QuickSand';
+    font-weight: 700;
     margin-bottom: var(--xs-gutter);
   }
   
@@ -706,8 +706,8 @@ body {
     column-gap: var(--sm-gutter);
     color: var(--white);
     text-decoration: none;
-    font-family: 'QuickSandBold';
-    font-weight: 500;
+    font-family: 'QuickSand';
+    font-weight: 700;
     position: fixed;
     bottom: var(--sm-gutter);
     right: var(--sm-gutter);
