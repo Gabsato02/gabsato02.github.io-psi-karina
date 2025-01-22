@@ -27,14 +27,13 @@
 
     <title>Atendimento psicológico online | Karina Shoegima</title>
 
-    <link rel="stylesheet" type="text/css" href="css/variables.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
 
-    <script defer src="js/script.js" />
+
+    <script defer type="module" src="js/index.js"></script>
 
     <script type="application/ld+json">
       {
@@ -63,8 +62,14 @@
     <header class="header" id="header">
       <div class="header-container container">
         <div class="header-container-info">
-          <h1 class="title">Karina Shoegima</h1>
-          <span class="crp">CRP 06/201820</span>
+          <a href="#"><img src="./assets/images/logo-wide.webp"></a>
+          <div class="header-links">
+            <a href="#bio">Sobre mim</a>
+            <a href="#psicoterapia">Psicoterapia</a>
+            <a href="#atendimento">Atendimento</a>
+            <a href="#transtornos">Quando buscar ajuda?</a>
+            <a href="#footer">Contato</a>
+          </div>
         </div>
         <div class="menu-toggler" id="menu-toggler">
           <span class="line"></span>
@@ -83,113 +88,138 @@
       <a href="#footer">Contato</a>
     </div>
 
-    <main class="main">
-      <section class="bio container" id="bio">
-        <!-- <img
-          class="avatar"
-          src="./assets/images/avatar.png"
+    <div class="spotlight">
+      <div class="container">
+        <div class="spotlight-info">
+          <span>Te ajudo a ressignificar sua jornada</span>
+          <p>Psicóloga Clínica | Terapia Cognitivo Comportamental (TCC)</p>
+          <a
+            rel="nofollow"
+            class="button"
+          >
+            Iniciar atendimento
+          </a>
+        </div>
+
+        <img
+          src="./assets/images/profile-photo-2.png"
           alt="Foto de perfil da psicóloga Karina Shoegima"
           title="Karina Shoegima | Psicóloga"
           loading="lazy"
-          width="120"
-          height="120"
-        /> -->
+        />
+      </div>
+    </div>
 
-        <div class="bio-content">
-          <h2 class="section-title">
-            Quem sou eu?
-          </h2>
-          <p class="section-paragraph">Meu nome é <strong>Karina Shoegima</strong>, sou graduada em Psicologia pela <strong>Universidade Nove de Julho</strong> e pós-graduanda em Terapias Cognitivo-Comportamentais pela <strong>PUC</strong>.</p>
-          <p class="section-paragraph">Estou aqui para te ajudar a <strong>ressignificar sua jornada</strong>, na busca pelas respostas que procura, para uma vida mais leve.</p>
+    <main class="main">
+      <section class="bio" id="bio">
+        <div class="container">
+          <img
+          src="./assets/images/profile-photo-1.png"
+          alt="Foto de perfil da psicóloga Karina Shoegima"
+          title="Karina Shoegima | Psicóloga"
+          loading="lazy"
+        >
+          <div class="bio-content">
+            <h2>
+              Quem sou eu?
+            </h2>
+            <p class="paragraph">Meu nome é <strong>Karina Shoegima</strong>, sou graduada em Psicologia pela <strong>Universidade Nove de Julho</strong> e pós-graduanda em Terapias Cognitivo-Comportamentais pela <strong>PUC</strong>.</p>
+            <p class="paragraph">Estou aqui para te ajudar a <strong>ressignificar sua jornada</strong>, na busca pelas respostas que procura, para uma vida mais leve.</p>
+            </div>
           </div>
+        </div>
       </section>
 
       <section class="instagram-embed container" id="instagram">
-        <h2 class="section-title">
-          Antes de tudo, um recadinho...
-          <img
-            class="section-title-icon"
-            src="./assets/icons/life.svg"
-            loading="lazy"
-            alt="Ícone de coração com pessoa"
-            title="Recado"
-          />
-        </h2>
-        <p class="section-paragraph instagram-embed-quote">Espero que este seja um espaço em que você possa encontrar o <strong>acolhimento</strong> que procura, uma palavra que te <strong>conforte</strong>, uma escuta que te <strong>valide</strong>, um ambiente que <strong>compreenda</strong> suas emoções, para que possamos, <strong>juntos</strong>, construir um caminho que desperte o melhor em você.</p>
-        <behold-widget feed-id="Li972BWLIFkHgsEtSie4"></behold-widget>
-        <script>
-          if ('noModule' in HTMLScriptElement.prototype) {
-            const d=document,s=d.createElement('script');s.type='module';
-            s.src='https://w.behold.so/widget.js';d.body.appendChild(s);
-          }
-        </script>
+        <div class="container">
+          <h2>
+            Antes de tudo, um recadinho...
+            <img
+              src="./assets/icons/friend.png"
+              loading="lazy"
+              alt="Ícone de coração com pessoa"
+              title="Recado"
+              height="32px"
+            />
+          </h2>
+          <p class="paragraph instagram-embed-quote">Espero que este seja um espaço em que você possa encontrar o <strong>acolhimento</strong> que procura, uma palavra que te <strong>conforte</strong>, uma escuta que te <strong>valide</strong>, um ambiente que <strong>compreenda</strong> suas emoções, para que possamos, <strong>juntos</strong>, construir um caminho que desperte o melhor em você.</p>
+          <behold-widget feed-id="Li972BWLIFkHgsEtSie4"></behold-widget>
+          <script>
+            if ('noModule' in HTMLScriptElement.prototype) {
+              const d=document,s=d.createElement('script');s.type='module';
+              s.src='https://w.behold.so/widget.js';d.body.appendChild(s);
+            }
+          </script>
+        </div>
       </section>
 
       <section class="psycotherapy container" id="psicoterapia">
-        <h2 class="section-title">
+        <h2>
           Como é o processo de psicoterapia?
         </h2>
-        <p class="section-paragraph">Por meio da identificação de pensamentos e emoções que geram desconfortos, a <strong>Terapia Cognitivo-Comportamental (TCC)</strong> auxilia na mudança de crenças e comportamentos que impactam a dinâmica de vida.</p>
-        <p class="section-paragraph">O processo é <strong>colaborativo</strong>, com participação ativa de ambos. Um trabalho em equipe.</p>
+        <p class="paragraph">Por meio da identificação de pensamentos e emoções que geram desconfortos, a <strong>Terapia Cognitivo-Comportamental (TCC)</strong> auxilia na mudança de crenças e comportamentos que impactam a dinâmica de vida.</p>
+        <p class="paragraph">O processo é <strong>colaborativo</strong>, com participação ativa de ambos. Um trabalho em equipe.</p>
       </section>
 
-      <section class="service container" id="atendimento">
-        <h2 class="section-title">
-          Como funciona o atendimento online?
-        </h2>
-        <div class="service-card-wrapper">
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/meeting.svg"
-              loading="lazy"
-              alt="Ícone de reunião"
-              title="Psicoterapia Online"
-            />
-            <p class="section-paragraph">A psicoterapia online é um <strong>facilitador para a dinâmica de vida</strong>, com todos os benefícios do atendimento presencial, mesma duração de tempo, frequência, sigilo e seguindo o código de ética.</p>
-          </div>
-  
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/headset.svg"
-              loading="lazy"
-              alt="Ícone de atendimento"
-              title="Forma de atendimento online"
-            />
-            <p class="section-paragraph">As sessões por atendimento online são feitas por meio de vídeo chamada (<strong>Google Meet</strong> e <strong>Whatsapp</strong>), com duração de 50 minutos.</p>
-          </div>
-  
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/hand.svg"
-              loading="lazy"
-              alt="Ícone de mão com planta"
-              title="Acolhimento"
-            />
-            <p class="section-paragraph">É importante estar em um ambiente tranquilo e com privacidade para manter o sigilo e garantir um <strong>espaço acolhedor</strong> e seguro.</p>
-          </div>
+      <section class="service" id="atendimento">
+        <div class="container">
+          <h2>
+            Como funciona o atendimento online?
+          </h2>
+          <div class="service-card-wrapper">
+            <div class="service-card">
+              <img
+                class="service-card-icon"
+                src="./assets/icons/session.png"
+                loading="lazy"
+                alt="Ícone de reunião"
+                title="Psicoterapia Online"
+              />
+              <p class="paragraph">A psicoterapia online é um <strong>facilitador para a dinâmica de vida</strong>, com todos os benefícios do atendimento presencial, mesma duração de tempo, frequência, sigilo e seguindo o código de ética.</p>
+            </div>
+    
+            <div class="service-card">
+              <img
+                class="service-card-icon"
+                src="./assets/icons/call.png"
+                loading="lazy"
+                alt="Ícone de atendimento"
+                title="Forma de atendimento online"
+              />
+              <p class="paragraph">As sessões por atendimento online são feitas por meio de vídeo chamada (<strong>Google Meet</strong> e <strong>Whatsapp</strong>), com duração de 50 minutos.</p>
+            </div>
+    
+            <div class="service-card">
+              <img
+                class="service-card-icon"
+                src="./assets/icons/care.png"
+                loading="lazy"
+                alt="Ícone de mão com planta"
+                title="Acolhimento"
+              />
+              <p class="paragraph">É importante estar em um ambiente tranquilo e com privacidade para manter o sigilo e garantir um <strong>espaço acolhedor</strong> e seguro.</p>
+            </div>
 
-          <div class="service-card">
-            <img
-              class="service-card-icon"
-              src="./assets/icons/document.svg"
-              loading="lazy"
-              alt="Ícone de documento"
-              title="Manual do Paciente"
-            />
-            <p class="section-paragraph">Tem dúvidas sobre o atendimento online?</p>
-            <p class="section-paragraph">Consulte o <strong>Manual do Paciente</strong></p>
-            <a
-              href="./assets/docs/manual_do_paciente.pdf"
-              rel="nofollow"
-              class="button button-dark service-card-cta"
-              download
-            >
-              Download
-            </a>
-          </div>
+            <div class="service-card">
+              <img
+                class="service-card-icon"
+                src="./assets/icons/book.png"
+                loading="lazy"
+                alt="Ícone de documento"
+                title="Manual do Paciente"
+              />
+              <p class="paragraph">Tem dúvidas sobre o atendimento online?</p>
+              <p class="paragraph">Consulte o <strong>Manual do Paciente</strong></p>
+              <a
+                href="./assets/docs/manual_do_paciente.pdf"
+                rel="nofollow"
+                class="button service-card-cta"
+                download
+              >
+                Download
+              </a>
+            </div>
+          </div>  
         </div>
       </section>
 
@@ -197,54 +227,118 @@
         <div class="overline-container container">
           <span class="banner-overline">“Há mais na superfície do que nosso olhar alcança.”<br><span>Aaron Beck</span></span>
         </div>
-        <a 
-          href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento"  
-          target="_blank" 
-          class="banner-cta button" 
-          title="Agendar sessão"
-          id="cta"
-          rel="nofollow"
-        >
-          Clique aqui e marque sua sessão
-        </a>
+        <div class="banner-cta-container">
+          <a 
+            href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento"  
+            target="_blank" 
+            class="banner-cta button" 
+            title="Agendar sessão"
+            id="cta"
+            rel="nofollow"
+          >
+            Iniciar atendimento
+          </a>
+        </div>
       </section>
       
       <section class="disorders container" id="transtornos">
-        <h2 class="section-title">
-          Quando buscar ajuda?
-        </h2>
+        <div class="container">
+          <h2>
+            Quando buscar ajuda?
+          </h2>
 
-        <ul class="list">
-          <li class="list-item">
-            <span class="list-item-title">Ansiedade</span>
-            <p class="list-item-description">Pensamentos acelerados, tensão muscular, insônia, palpitações e falta de ar podem ser sinais de alerta para a ansiedade. <strong>Reconhecer e entender</strong> esses sintomas é o primeiro passo para lidar com a ansiedade de maneira saudável e eficaz.</p>
-          </li>
+          <ul class="list">
+            <li class="list-item">
+              <div class="list-item-header">
+                <img class="list-item-heading-icon" src="./assets/icons/depression.png">
+                <span class="list-item-title">Depressão</span>
+                <img
+                  class="list-item-icon"
+                  src="./assets/icons/down.svg"
+                  loading="lazy"
+                  alt="Ícone de seta"
+                  title="Exibir/ocultar descrição"
+                />
+              </div>
+              <p class="list-item-description">A depressão é mais do que apenas sentir tristeza: é uma condição médica que afeta o humor e os pensamentos. Se você tem sentido uma tristeza persistente, perda de interesse, alterações no sono e apetite, é importante buscar ajuda profissional. <strong>Você não está sozinho!</strong></p>
+            </li>
 
-          <li class="list-item">
-            <span class="list-item-title">Depressão</span>
-            <p class="list-item-description">A depressão é mais do que apenas sentir tristeza: é uma condição médica que afeta o humor e os pensamentos. Se você tem sentido uma tristeza persistente, perda de interesse, alterações no sono e apetite, é importante buscar ajuda profissional. <strong>Você não está sozinho!</strong></p>
-          </li>
+            <li class="list-item">
+              <div class="list-item-header">
+                <img class="list-item-heading-icon" src="./assets/icons/ansiety.png">
+                <span class="list-item-title">Ansiedade</span>
+                <img
+                  class="list-item-icon"
+                  src="./assets/icons/down.svg"
+                  loading="lazy"
+                  alt="Ícone de seta"
+                  title="Exibir/ocultar descrição"
+                />
+              </div>
+              <p class="list-item-description">Pensamentos acelerados, tensão muscular, insônia, palpitações e falta de ar podem ser sinais de alerta para a ansiedade. <strong>Reconhecer e entender</strong> esses sintomas é o primeiro passo para lidar com a ansiedade de maneira saudável e eficaz.</p>
+            </li>
 
-          <li class="list-item">
-            <span class="list-item-title">Autoestima</span>
-            <p class="list-item-description">Sentimentos de inadequação, baixa autoconfiança, autocrítica constante e dificuldade em aceitar elogios, podem indicar problemas de autoestima. Aceitar quem somos e reconhecer nossas qualidades positivas, indo além da aparência, é uma forma de fortalecer o amor próprio, <strong>vamos juntos</strong>?</p>
-          </li>
+            <li class="list-item">
+              <div class="list-item-header">
+                <img class="list-item-heading-icon" src="./assets/icons/grief.png">
+                <span class="list-item-title">Luto</span>
+                <img
+                  class="list-item-icon"
+                  src="./assets/icons/down.svg"
+                  loading="lazy"
+                  alt="Ícone de seta"
+                  title="Exibir/ocultar descrição"
+                />
+              </div>
+              <p class="list-item-description">A morte de uma pessoa querida, o término de um casamento e a demissão de um emprego, nos leva a vivenciar o luto, que pode ser uma experiência avassaladora. A psicoterapia pode fornecer um espaço seguro para <strong>expressar emoções e reconstruir a vida</strong> após a perda.</p>
+            </li>
 
-          <li class="list-item">
-            <span class="list-item-title">Luto</span>
-            <p class="list-item-description">A morte de uma pessoa querida, o término de um casamento e a demissão de um emprego, nos leva a vivenciar o luto, que pode ser uma experiência avassaladora. A psicoterapia pode fornecer um espaço seguro para <strong>expressar emoções e reconstruir a vida</strong> após a perda.</p>
-          </li>
+            <li class="list-item">
+              <div class="list-item-header">
+                <img class="list-item-heading-icon" src="./assets/icons/relationship.png">
+                <span class="list-item-title">Relacionamentos</span>
+                <img
+                  class="list-item-icon"
+                  src="./assets/icons/down.svg"
+                  loading="lazy"
+                  alt="Ícone de seta"
+                  title="Exibir/ocultar descrição"
+                />
+              </div>
+              <p class="list-item-description">Relações abusivas envolvem um desequilíbrio de poder, com uma pessoa exercendo controle sobre a outra através de comportamentos prejudiciais. Reconhecer os sinais e buscar apoio psicológico são passos essenciais para <strong>romper com esse ciclo</strong>.</p>
+            </li>
 
-          <li class="list-item">
-            <span class="list-item-title">Burnout</span>
-            <p class="list-item-description">Quando o estresse no trabalho se prolonga, o burnout pode se manifestar, um estado de exaustão física, emocional e mental. Se perceber sinais como fadiga extrema e despersonalização, é a <strong>hora de conversar com um psicólogo</strong>!</p>
-          </li>
+            <li class="list-item">
+              <div class="list-item-header">
+                <img class="list-item-heading-icon" src="./assets/icons/selfesteem.png">
+                <span class="list-item-title">Autoestima</span>
+                <img
+                  class="list-item-icon"
+                  src="./assets/icons/down.svg"
+                  loading="lazy"
+                  alt="Ícone de seta"
+                  title="Exibir/ocultar descrição"
+                />
+              </div>
+              <p class="list-item-description">Sentimentos de inadequação, baixa autoconfiança, autocrítica constante e dificuldade em aceitar elogios, podem indicar problemas de autoestima. Aceitar quem somos e reconhecer nossas qualidades positivas, indo além da aparência, é uma forma de fortalecer o amor próprio, <strong>vamos juntos</strong>?</p>
+            </li>
 
-          <li class="list-item">
-            <span class="list-item-title">Relacionamentos</span>
-            <p class="list-item-description">Relações abusivas envolvem um desequilíbrio de poder, com uma pessoa exercendo controle sobre a outra através de comportamentos prejudiciais. Reconhecer os sinais e buscar apoio psicológico são passos essenciais para <strong>romper com esse ciclo</strong>.</p>
-          </li>
-        </ul>
+            <li class="list-item">
+              <div class="list-item-header">
+                <img class="list-item-heading-icon" src="./assets/icons/burnout.png">
+                <span class="list-item-title">Burnout</span>
+                <img
+                  class="list-item-icon"
+                  src="./assets/icons/down.svg"
+                  loading="lazy"
+                  alt="Ícone de seta"
+                  title="Exibir/ocultar descrição"
+                />
+              </div>
+              <p class="list-item-description">Quando o estresse no trabalho se prolonga, o burnout pode se manifestar, um estado de exaustão física, emocional e mental. Se perceber sinais como fadiga extrema e despersonalização, é a <strong>hora de conversar com um psicólogo</strong>!</p>
+            </li>
+          </ul>  
+        </div>
       </section>
       
     </main>
@@ -259,74 +353,78 @@
     >
       <img
         class="floating-cta-icon"
-        src="./assets/icons/whatsapp-white.svg"
+        src="./assets/icons/whatsapp.svg"
         loading="lazy"
         alt="Ícone de whatsapp"
         title="Whatsapp"
       />
-      Entre em contato
+      Iniciar atendimento
     </a>
 
     <footer class="footer" id="footer">
-      <address class="contact">
-        <h3 class="contact-title">Entre em contato</h3>
-        <span class="contact-subtitle">Será um prazer lhe responder</span>
+      <div class="footer-content">
+        <img class="footer-content-logo" src="./assets/images/logo-full-negative.webp" />
         
-        <a
-          href="mailto:psi.karinashoegima@gmail.com?subject=Terapia&body=Olá, gostaria de saber mais sobre seu atendimento"
-          target="_blank"
-          class="contact-item"
-          title="Enviar e-mail"
-          rel="nofollow"
-        >
-          <img
-            class="contact-icon"
-            src="./assets/icons/envelop.svg"
-            loading="lazy"
-            alt="Ícone de e-mail"
-            title="E-mail" 
-          />
-          <span class="contact-item-label">psi.karinashoegima@gmail.com</span>
-        </a>
-        
-        <a
-          href="https://www.instagram.com/psi.karinashoegima/"
-          title="Instagram"
-          target="_blank"
-          class="contact-item"
-          id="contact-item-instagram"
-        >
-          <img
-            class="contact-icon"
-            src="./assets/icons/instagram.svg"
-            loading="lazy"
-            alt="Ícone de instagram"
-            title="Instagram"
-          />
-          <span class="contact-item-label">@psi.karinashoegima</span>
-        </a>
+        <span class="crp">CRP 06/201820</span>
 
-        <a 
-          href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento" 
-          target="_blank" 
-          title="WhatsApp" 
-          class="contact-item"
-          id="contact-item-whatsapp"
-          rel="nofollow"
-        >
-          <img
-            class="contact-icon"
-            src="./assets/icons/whatsapp.svg"
-            loading="lazy"
-            alt="Ícone de whatsapp"
-            title="Whatsapp"
-          />
-          <span class="contact-item-label">(11) 9 4545-6841</span>
-        </a>
-      </address>
+        <address class="contact">
+          <a
+            href="mailto:psi.karinashoegima@gmail.com?subject=Terapia&body=Olá, gostaria de saber mais sobre seu atendimento"
+            target="_blank"
+            class="contact-item"
+            title="Enviar e-mail"
+            rel="nofollow"
+          >
+            <img
+              class="contact-icon"
+              src="./assets/icons/envelop.svg"
+              loading="lazy"
+              alt="Ícone de e-mail"
+              title="E-mail" 
+            />
+          </a>
+          
+          <a
+            href="https://www.instagram.com/psi.karinashoegima/"
+            title="Instagram"
+            target="_blank"
+            class="contact-item"
+            id="contact-item-instagram"
+          >
+            <img
+              class="contact-icon"
+              src="./assets/icons/instagram.svg"
+              loading="lazy"
+              alt="Ícone de instagram"
+              title="Instagram"
+            />
+          </a>
+  
+          <a 
+            href="https://wa.me/+5511945456841?text=Olá, gostaria de saber mais sobre seu atendimento" 
+            target="_blank" 
+            title="WhatsApp" 
+            class="contact-item"
+            id="contact-item-whatsapp"
+            rel="nofollow"
+          >
+            <img
+              class="contact-icon"
+              src="./assets/icons/whatsapp.svg"
+              loading="lazy"
+              alt="Ícone de whatsapp"
+              title="Whatsapp"
+            />
+          </a>
+        </address>
+
+        <div class="disclaimer">
+          O atendimento psicoterapêutico não fornece suporte imediato para pessoas em situação de crise suicida. Se você estiver em crise, entre em contato com o CVV pelo número 188. Em casos de emergência, dirija-se ao hospital mais próximo. Se houver risco de vida, ligue imediatamente para o SAMU pelo telefone 192.
+        </div>
+      </div>
 
       <div class="copyright">
-        <a target="_blank" href="https://www.flaticon.com/uicons" rel="nofollow">Uicons do Flaticon</a>
+        <a target="_blank" href="https://www.flaticon.com/uicons" rel="nofollow">Ícones criados por Freepik - Flaticon</a>
         <span>|</span>
         <a target="_blank" href="https://github.com/Gabsato02" rel="nofollow">Desenvolvido por Gabriel Sato</a>
       </div>

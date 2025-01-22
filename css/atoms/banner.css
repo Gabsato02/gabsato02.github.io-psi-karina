@@ -1,0 +1,130 @@
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/banner.webp') no-repeat center, var(--grey-blue);
+  background-size: cover;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100vw;
+  position: relative;
+  height: 240px;
+  min-height: 240px;
+}
+
+.overline-container {
+  position: relative;
+}
+
+.banner-overline {
+  width: calc(100% - var(--default-gutter) * 2);
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: var(--md-gutter);
+  color: var(--white);
+  font-size: var(--md-text);
+  line-height: 1.6;
+  font-family: 'BadScriptRegular';
+  text-shadow: var(--text-shadow);
+
+  span {
+    display: block;
+    margin-top: var(--xs-gutter);
+  }
+}
+
+.banner-cta {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: var(--sm-gutter);
+  font-size: var(--lg-text);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--sm-gutter);
+  width: 100%;
+  background: var(--green);
+  border-radius: 0;
+  opacity: 0;
+  transition: ease all .3s;
+
+  &.show {
+    display: flex;
+    opacity: 1;
+  }
+
+  +:active {
+    background-color: var(--dark-blue);
+  }
+
+  &::before {
+    height: var(--xl-text);
+    width: var(--xl-text);
+    max-width: var(--xl-text);
+    background-size: var(--xl-text);
+    content: '';
+    background-image: url('../../assets/icons/whatsapp.svg');
+    flex: 1;
+  }  
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 280px;
+    min-height: 280px;
+  }
+
+  .banner-overline {
+    top: var(--lg-gutter);
+    font-size: var(--lg-text);
+  }
+
+  .banner-cta {
+    padding: var(--md-gutter);
+    font-size: var(--xl-text);
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    background-attachment: fixed;
+    height: 480px;
+    min-height: 480px;
+  }
+
+  .banner-overline {
+    top: var(--xl-gutter);
+  }
+
+  .banner-cta-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: var(--xl-gutter);
+  }
+
+  .banner-cta {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: var(--border-radius-lg);
+    gap: var(--sm-gutter);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &::before {
+      flex-shrink: 0;
+    }
+  }
+}

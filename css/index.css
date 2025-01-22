@@ -1,0 +1,14 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "./fonts.css";
+@import "./global.css";
+@import "./atoms/buttons.css";
+@import "./atoms/header.css";
+@import "./atoms/spotlight.css";
+@import "./atoms/bio.css";
+@import "./atoms/instagram.css";
+@import "./atoms/psycotherapy.css";
+@import "./atoms/service.css";
+@import "./atoms/disorders.css";
+@import "./atoms/footer.css";
+@import "./atoms/banner.css";

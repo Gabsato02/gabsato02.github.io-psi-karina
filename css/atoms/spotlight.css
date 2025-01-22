@@ -1,0 +1,84 @@
+.spotlight {
+  margin-top: var(--lg-gutter);
+
+  .container {
+    margin: 0 auto;
+  }
+
+  span {
+    font-size: var(--xl-text);
+    color: var(--dark-blue);
+    font-family: 'QuickSand';
+    font-weight: 700;
+  }
+
+  p {
+    margin-top: var(--default-gutter);
+    color: var(--dark-grey);
+    line-height: 1.6;
+    font-size: var(--section-paragraph);
+    font-family: 'QuickSand';
+  }
+
+  .button {
+    margin: var(--default-gutter) auto 0;
+    background: var(--green);
+  
+    &::before {
+      content: '';
+      background-image: url('../../assets/icons/whatsapp.svg');
+    } 
+  }
+
+  img {
+    display: block;
+    margin: var(--xl-gutter) auto 0;
+    max-width: 500px;
+    width: 100%;
+    border-radius: var(--border-radius-xl);
+  }
+}
+
+.spotlight-info {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .spotlight {
+    margin-top: var(--xl-gutter);
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--xl-gutter);
+    }
+
+    span {
+      font-size: var(--xxl-text);
+    }  
+
+    .button {
+      margin: var(--default-gutter) 0 0;
+      font-size: var(--lg-text);
+    
+      &::before {
+        height: var(--xl-text);
+        width: var(--xl-text);
+        background-size: var(--xl-text);
+      } 
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+
+  .spotlight-info {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto 0 0;
+  }
+}

@@ -1,0 +1,28 @@
+.instagram-embed {
+  padding: var(--lg-gutter) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  iframe {
+    margin: 0 !important;
+  }
+
+}
+
+.instagram-embed-quote {
+  margin-bottom: var(--default-gutter) !important;
+  font-family: 'QuickSand';
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 768px) {
+  .instagram-embed {
+    text-align: left;
+  }
+}

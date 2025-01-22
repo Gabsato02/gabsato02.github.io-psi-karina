@@ -25,6 +25,7 @@
   --md-text: 18px;
   --lg-text: 24px;
   --xl-text: 32px;
+  --xxl-text: 40px;
   /* CONTAINER */
   --sm-container: 768px;
   --md-container: 1024px;
@@ -35,7 +36,9 @@
   --box-shadow-lg: 0 4px 8px var(--shadow);
   --text-shadow: 1px 1px 2px var(--black);
   /* DEFAULTS */
-  --border-radius: 4px;
+  --border-radius: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-xl: 32px;
   /* DEFAULTS */
   --default-gutter: var(--sm-gutter);
   --container: var(--sm-container);
