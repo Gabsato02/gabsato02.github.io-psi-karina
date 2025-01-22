@@ -44,8 +44,6 @@
 
 .list-item-description {
   display: block;
-  font-family: 'QuickSand';
-  line-height: 1.6;
   background: var(--white);
   color: var(--dark-blue);
   max-height: 0;
@@ -71,10 +69,6 @@
   }
 }
 
-.list-item-description strong {
-  font-weight: 500;
-}
-
 @media (min-width: 768px) {
   .disorders {
 
@@ -87,13 +81,6 @@
     display: block;
     font-family: 'QuickSand';
     font-weight: 700;
-  }
-  
-  .list-item-description {
-    display: block;
-    font-family: 'QuickSand';
-    line-height: 1.5;
-    margin: 0;
   }
 }
 
