@@ -3,7 +3,6 @@
   top: 0;
   z-index: 10;
   background: var(--white);
-  padding: var(--default-gutter);
   box-shadow: var(--box-shadow-sm);
   font-family: 'NeutralFace';
   transition: ease 0.2s all;
@@ -24,6 +23,8 @@
 }
 
 .header-container {
+  padding-top: var(--default-gutter);
+  padding-bottom: var(--default-gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -174,6 +175,11 @@
         transform: scale(1.10);
       }
     }
+  }
+
+  .header-container {
+    padding-top: var(--sm-gutter);
+    padding-bottom: var(--sm-gutter);
   }
 
   .header-container-info {
