@@ -17,7 +17,7 @@
 }
 
 .banner-overline {
-  width: calc(100% - var(--default-gutter) * 2);
+  width: calc(100% - var(--lg-gutter) * 2);
   text-align: center;
   z-index: 2;
   position: absolute;
@@ -25,7 +25,7 @@
   transform: translateX(-50%);
   top: var(--md-gutter);
   color: var(--white);
-  font-size: var(--md-text);
+  font-size: var(--lg-text);
   line-height: 1.6;
   font-family: 'BadScriptRegular';
   text-shadow: var(--text-shadow);
@@ -33,6 +33,12 @@
   span {
     display: block;
     margin-top: var(--xs-gutter);
+  }
+
+  cite {
+    font-size: var(--md-text);
+    display: block;
+    text-shadow: var(--text-shadow-lg);
   }
 }
 
@@ -51,7 +57,7 @@
   background: var(--green);
   border-radius: 0;
   opacity: 0;
-  transition: ease all .3s;
+  transition: ease all 0.3s;
 
   &.show {
     display: flex;
@@ -65,12 +71,20 @@
   &::before {
     height: var(--xl-text);
     width: var(--xl-text);
-    max-width: var(--xl-text);
+    min-width: var(--xl-text);
     background-size: var(--xl-text);
     content: '';
     background-image: url('../../assets/icons/whatsapp.svg');
-    flex: 1;
+    flex-shrink: 0;
   }  
+}
+
+@media (max-width: 430px) {
+  .banner-cta {
+    span {
+      max-width: 240px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -81,7 +95,13 @@
 
   .banner-overline {
     top: var(--lg-gutter);
-    font-size: var(--lg-text);
+    font-size: var(--xl-text);
+
+    cite {
+      font-size: var(--lg-text);
+      text-shadow: var(--text-shadow);
+      margin-top: var(--sm-gutter);
+    }
   }
 
   .banner-cta {
@@ -99,6 +119,12 @@
 
   .banner-overline {
     top: var(--xl-gutter);
+    font-size: var(--xxl-text);
+
+    cite {
+      font-size: var(--xl-text);
+      text-shadow: var(--text-shadow);
+    }
   }
 
   .banner-cta-container {

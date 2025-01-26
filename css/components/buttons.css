@@ -58,7 +58,7 @@
     padding: var(--sm-gutter);
     box-shadow: var(--box-shadow);
     width: fit-content;
-    transition: ease all .3s;
+    transition: ease all 0.3s;
     font-size: var(--lg-text);
     opacity: 0;
 

@@ -1,7 +1,7 @@
 .bio {
   background: rgba(var(--light-blue-rgb), 50%);
   padding: var(--xl-gutter) 0;
-  margin: var(--default-gutter) 0;
+  margin: var(--default-gutter) 0 0;
   text-align: center;
 
   .container {

@@ -1,6 +1,4 @@
-.disorders {
-  padding: var(--xl-gutter) 0;
-
+.faq {
   h2 {
     text-align: center;
   }
@@ -12,11 +10,11 @@
   }
 
   .list-item-header {
-    background: var(--dark-blue);
+    background: var(--light-blue);
   }  
 
   .list-item-title {
-    color: var(--white);
+    color: var(--dark-blue);
   }
 
   .list-item-description {
@@ -26,7 +24,7 @@
 }
 
 @media (min-width: 768px) {
-  .disorders {
+  .faq {
     h2 {
       text-align: left;
     }
@@ -34,9 +32,9 @@
 }
 
 @media (min-width: 1024px) {
-  .disorders {
+  .faq {
     .list-item {
-      width: calc((100% / 3) - (32px / 3));
+      width: calc((100% / 2) - (16px / 2));
     }
   }
 }

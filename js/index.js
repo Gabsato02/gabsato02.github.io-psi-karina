@@ -1,2 +1,2 @@
 import './header.js';
-import './disorders.js';
+import './list-items.js';

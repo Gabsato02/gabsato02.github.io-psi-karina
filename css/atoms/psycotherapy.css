@@ -14,7 +14,17 @@
     text-align: left;
   }  
 
-  @media (min-width: 1288px) {
+  @media (min-width: 1225px) {
     border-radius: var(--border-radius-xl);
   }  
+}
+
+.psycotherapy-light {
+  margin-top: 0;
+  background: var(--white);
+  color: var(--dark-blue);
+
+  h2 {
+    color: var(--dark-blue);
+  }
 }

@@ -30,7 +30,7 @@
 .contact-icon {
   width: var(--lg-text);
   height: var(--lg-text);
-  transition: ease .3s all;
+  transition: ease 0.3s all;
 
   &:hover {
     transform: scale(1.10);

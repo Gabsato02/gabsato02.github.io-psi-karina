@@ -3,14 +3,13 @@ function handleToggleItem(el) {
 }
 
 function handleListItems() {
-  const disorderItems = document.querySelectorAll('.list-item');
+  const listItems = document.querySelectorAll('.list-item-header');
 
-  disorderItems.forEach((el) => {
-    console.log(el)
+  listItems.forEach((el) => {
     el.addEventListener('click', (e) => {
       e.preventDefault();
-      
-      handleToggleItem(el);
+
+      handleToggleItem(el.parentElement);
     });
   });
 }
