@@ -1,0 +1,98 @@
+.therapy-group {
+  margin-bottom: var(--xl-gutter);
+  background: var(--light-blue);
+  padding: var(--xl-gutter) 0;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--lg-gutter);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm-gutter);
+    margin-bottom: var(--md-gutter);
+  }
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--md-gutter);
+
+    img {
+      flex-shrink: 0;
+      max-width: 24px;
+      height: 24px;
+      margin: 0;
+    }
+  }
+
+  .therapy-group-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--sm-gutter);
+    max-width: 500px;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: var(--md-gutter) auto 0;
+      order: 2;
+    }
+
+    .button {
+      &:first-of-type {
+        &::before {
+          content: '';
+          background-image: url('../../assets/icons/register.svg');
+        } 
+      }
+
+      &:last-of-type {
+        background: transparent;
+        color: var(--dark-blue);
+        text-shadow: none;
+        border: 1px solid var(--dark-blue);
+
+        &::before {
+          content: '';
+          background-image: url('../../assets/icons/info.svg');
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .therapy-group {
+    .container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .therapy-group-image {
+      min-width: 400px;
+      flex-direction: column-reverse;
+
+      img {
+        margin: 0 auto var(--md-gutter);
+      }
+    }
+  }
+}
+
+@media (min-width: 1288px) {
+  .therapy-group {
+    .therapy-group-image {
+      min-width: 400px;
+    }
+  }
+}

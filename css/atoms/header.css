@@ -4,7 +4,7 @@
   z-index: 10;
   background: var(--white);
   box-shadow: var(--box-shadow-sm);
-  font-family: 'NeutralFace';
+  font-family: 'QuickSand';
   transition: ease 0.2s all;
 
   .title {
@@ -158,10 +158,10 @@
 
   .header-links {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 0 var(--default-gutter);
     font-size: var(--sm-text);
-    gap: var(--default-gutter);
+    gap: var(--md-gutter);
     text-align: center;
     letter-spacing: 1.5px;
     line-height: 1.6;
@@ -170,9 +170,10 @@
       text-decoration: none;
       color: var(--dark-grey);
       transition: ease 0.3s all;
+      font-size: 14px;
 
       &:hover {
-        transform: scale(1.10);
+        transform: scale(1.05);
       }
     }
   }

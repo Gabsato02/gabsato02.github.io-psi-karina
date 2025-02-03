@@ -20,6 +20,10 @@ body {
   }
 }
 
+i {
+  font-style: italic;
+}
+
 .main {
   background: var(--white);
 }

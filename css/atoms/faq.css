@@ -12,11 +12,12 @@
   }
 
   .list-item-header {
-    background: var(--light-blue);
+    background: var(--light-grey);
   }  
 
   .list-item-title {
     color: var(--dark-blue);
+    line-height: 1.5;
   }
 
   .list-item-description {
