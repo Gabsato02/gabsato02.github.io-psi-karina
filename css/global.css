@@ -22,6 +22,7 @@ body {
 
 i {
   font-style: italic;
+  pointer-events: none;
 }
 
 .main {
